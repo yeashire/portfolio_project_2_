@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Chewy';
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+html {
+    min-height: 100vh;
+}
+
+body {
+    margin: 0;
+    background-image: url('/assets/images/background_image.jpg');
+}
+
+.page-title {
+    text-align: center;
+    font-weight: normal;
+    font-family: 'Chewy';
+    font-size: 70px;
+    color: rgb(225, 229, 209);
+    margin-top: 60px;
+}
+
+.game-moves-container {
+    grid-column: 1/-1;
+    justify-content: center;
+    display: flex;
+    padding: 0 10px;
+}
+
+.moves-info {
+    font-size: 30px;
+    color: rgb(239, 204, 184);
+}
+
+.grid-container {
+    display: grid;
+    justify-content: center;
+    grid-gap: 16px;
+    grid-template-columns: repeat(6, 140px);
+    grid-template-rows: repeat(2, calc(140px / 2 * 3));
+}
